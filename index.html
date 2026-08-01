@@ -3,38 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>自己紹介</title>
-		<!-- reset.css ress -->
-		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
-    <link rel="stylesheet" href="css/styles.css">
+    <title>自己紹介サイト</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-    <header class="header">
-        <nav class="nav">
-            <ul>
-                <li><a href="#profile">プロフィール</a></li>
-                <li><a href="#hobbies">趣味</a></li>
-            </ul>
-        </nav>
-        <h1>わたしの自己紹介サイト</h1>
-    </header>
-    <main>
-        <section id="profile">
-            <h2>プロフィール</h2>
-            <p>こんにちは、わたしは[あなたの名前]です。これはわたしの自己紹介サイトです。</p>
-        </section>
-        <section id="hobbies">
-            <h2>趣味</h2>
-            <ul>
-                <li>読書</li>
-                <li>旅行</li>
-                <li>プログラミング</li>
-            </ul>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>&copy; 2024 わたしの自己紹介サイト</p>
-    </footer>
-    <script src="js/scripts.js"></script>
+<body>
+
+<header>
+    <h1>自己紹介サイト</h1>
+    <button id="darkMode">🌙</button>
+</header>
+
+<main>
+
+    <!-- プロフィール -->
+    <section class="profile fade">
+        <h2>和田 勇斗</h2>
+        <p id="typing"></p>
+    </section>
+
+    <!-- 自己紹介 -->
+    <section class="box fade">
+        <h2>自己紹介</h2>
+
+        <p>
+            はじめまして。<br><br>
+
+            専門学校でITについて勉強しています。<br>
+            HTML・CSS・JavaScriptを学びながら
+            Webサイト制作に挑戦しています。<br><br>
+
+            まだ勉強中ですが、
+            たくさんの作品を作れるよう頑張っています。
+        </p>
+    </section>
+
+    <!-- 趣味 -->
+    <section class="box fade">
+        <h2>趣味</h2>
+
+        <ul class="hobby-list">
+            <li><a href="game.html"> ゲーム</a></li>
+            <li><a href="camp.html"> キャンプ</a></li>
+            <li><a href="fishing.html"> 釣り</a></li>
+        </ul>
+
+    </section>
+
+    <!-- 将来の夢 -->
+   <section class="box fade">
+
+    <h2>将来の夢（目標）</h2>
+
+    <div class="dream-images">
+        <img src="images/dodge.jpg" alt="ダッジチャレンジャーSRT8">
+        <img src="images2/dodge.jpeg" alt="ダッジチャレンジャーSRT8">
+    </div>
+
+    <p>
+        ダッジチャレンジャーSRT8を購入することが目標です。
+    </p>
+
+</section>
+
+</main>
+
+<footer>
+    <p>©2026 和田 勇斗</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

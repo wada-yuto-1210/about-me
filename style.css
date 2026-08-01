@@ -1,0 +1,159 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Yu Gothic",sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.8;
+}
+
+header{
+    background:#4a90e2;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:sticky;
+    top:0;
+}
+
+header h1{
+    font-size:28px;
+}
+
+#darkMode{
+    background:white;
+    color:#4a90e2;
+    border:none;
+    border-radius:8px;
+    padding:8px 15px;
+    cursor:pointer;
+}
+
+main{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+}
+
+.profile{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #4a90e2;
+    cursor:pointer;
+    transition:.5s;
+}
+
+.box{
+    background:white;
+    margin-bottom:25px;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.box h2{
+    color:#4a90e2;
+    margin-bottom:15px;
+    border-left:5px solid #4a90e2;
+    padding-left:10px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin:8px 0;
+}
+
+footer{
+    background:#4a90e2;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* ダークモード */
+
+.dark{
+    background:#222;
+    color:white;
+}
+
+.dark .box{
+    background:#333;
+    color:white;
+}
+
+.dark header{
+    background:#111;
+}
+
+.dark footer{
+    background:#111;
+}
+
+.dark .box h2{
+    color:#7db8ff;
+    border-left-color:#7db8ff;
+}
+
+/* フェードイン */
+
+.fade{
+    opacity:0;
+    transform:translateY(30px);
+    transition:0.8s;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* スマホ対応 */
+
+@media(max-width:600px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+header h1{
+    font-size:24px;
+}
+
+#photo{
+    width:140px;
+    height:140px;
+}
+
+}
+.dream-images{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dream-images img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
